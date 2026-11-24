@@ -1,0 +1,17 @@
+{
+  "art_style": "Semi-realistic 2D illustration. Clean outlines, no texture noise. Accurate human proportions, detailed expressive faces with clear South Asian features.",
+  "color_palette": "Warm muted tones: amber, khaki, dusty olive, deep navy. Warm brown/golden skin tones. Desaturated backgrounds. Single dramatic light accent (amber lamp or blue moonlight).",
+  "lighting": "Single-source dramatic lighting - strong side-light or overhead spotlight. Deep shadows. Cinematic contrast. Never flat or even.",
+  "camera": "Medium-close portrait (chest up) for characters. Wide establishing shots for environments. Slight low angle for powerful figures.",
+  "composition": "Subject fills 60-70% of frame. Shallow, slightly blurred illustrated background. Documentary-realist, no fantasy elements.",
+  "detail": "High detail on faces and clothing. Medium detail on environment. Historically accurate props: period uniforms, era-accurate decor, authentic items.",
+  "mood": "Grave, tense, authoritative. Never comic or cartoonish. A serious Indian crime documentary rendered as illustrated film.",
+  "overlays": "Maps with network lines, mission-board graphics, classified-document props - all 2D illustrated, integrated naturally.",
+  "aspect_ratio": "16:9",
+  "style_suffix": "Style: Semi-realistic 2D illustration, clean outlines, AniDoc documentary style, 16:9 aspect ratio.",
+  "motion": {
+    "allowed": ["slow push-in", "gentle pan", "controlled zoom", "subtle atmospheric particles", "parallax"],
+    "forbidden": ["fast cuts inside a scene", "action-film camera moves", "shaky cam"],
+    "scene_seconds": {"min": 3, "max": 6}
+  }
+}

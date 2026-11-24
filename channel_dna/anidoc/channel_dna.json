@@ -1,0 +1,33 @@
+{
+  "channel_id": "anidoc",
+  "channel_name": "AniDoc",
+  "tagline": "Real events. Hidden facts. Untold realities.",
+  "niche": "India-centric documentary: true crime, espionage, political history, untold real events",
+  "language": "hi-IN",
+  "audience": "Hindi-speaking, 18-45, curious about real power, crime, politics, national security",
+  "platform": "youtube",
+  "aspect_ratio": "16:9",
+  "preferred_duration_seconds": {"min": 600, "max": 900},
+  "preferred_topics": [
+    "underworld and crime history",
+    "RAW/IB espionage operations",
+    "political history",
+    "war and military secrets",
+    "scams and systemic corruption",
+    "verified recent India news events"
+  ],
+  "forbidden_topics": [
+    "unverified claims about sitting leaders",
+    "topics without substantial public documentation",
+    "communal incitement",
+    "graphic gore"
+  ],
+  "topic_evidence_rule": "Only produce scripts on topics with substantial public documentation: court records, published books, newspaper investigations, official government records, or established historical scholarship.",
+  "real_figures_policy": {
+    "historical_or_deceased": "render full likeness in channel 2D illustration style",
+    "currently_serving_heads_of_state": "symbolic imagery, silhouettes, settings, maps, documents only - no AI-generated likenesses"
+  },
+  "cta_style": "like/subscribe delivered in the same grave documentary narrator tone, never casual or upbeat",
+  "publishing": {"default_privacy": "private", "schedule": null},
+  "seo_strategy": "Hindi curiosity-gap titles under 10 words, keyword-rich 150-200 word Hindi descriptions, 15 hashtags, 30 mixed Hindi/English tags"
+}

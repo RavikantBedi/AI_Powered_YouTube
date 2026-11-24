@@ -1,0 +1,17 @@
+{
+  "word_count_target": {"min": 3000, "max": 4500, "tolerance_pct": 5},
+  "reading_speeds_wpm": [50, 100, 160],
+  "language_register": "Formal Hindi with Urdu flavor for crime/spy topics. No Hinglish. Precise Hindi terms for institutions, operations, geography.",
+  "narrator": "Third-person cinematic narrator. Controlled gravity. Authoritative, never sensational. Serious documentary voiceover.",
+  "hook": "Open mid-action with a precise date, city, and sensory detail within the first 3 sentences. Immediately raise unanswered stakes.",
+  "sentence_rhythm": "Short punchy sentences, max 2 clauses. Alternate fast narrative bursts with slow dramatic pauses.",
+  "flow": ["hook", "background", "inciting_incident", "escalation", "climax", "resolution", "significance", "cta"],
+  "transitions": "Scene changes marked by year/date stamps. No filler phrases between scenes.",
+  "curiosity_gaps": "Raise a question, withhold the answer 60-90 seconds, deliver with maximum impact.",
+  "emotional_triggers": ["betrayal", "revenge", "family loss", "patriotism", "systemic corruption"],
+  "retention_rule": "Every 90-120 seconds a new revelation or scene escalation. Mark tension peaks with [TENSION PEAK].",
+  "direct_address": "Occasional direct address to the viewer, max 3-4 times per video.",
+  "dialogue_rule": "Direct speech only from documented public statements, court records, or verified sources. Undocumented private conversations use indirect narration ('unhone kaha ki...'). Never invent quotations.",
+  "clean_prose": "No headings, no section markers, no [MUSIC] tags. Continuous voiceover-ready prose. The only allowed inline marker is [TENSION PEAK].",
+  "ending": "Resolution, then macro significance, then like/subscribe CTA in the same documentary tone."
+}

@@ -1,0 +1,13 @@
+{
+  "headline": "Bold Devanagari Hindi. White main text with exactly one keyword in red or yellow. Black/ExtraBold weight. Fills top 25-35% of the frame.",
+  "text_placement": "Headline top-center or top-full-width. No text in bottom corners.",
+  "badge": "'2D ANIMATION' in a yellow rounded rectangle with black bold text, bottom-center, on every thumbnail.",
+  "characters": "1-2 main illustrated figures, large, center/right. Intense, shocked, determined, or grave expression. Chest-up or full body.",
+  "background": "Split composition: one side dark dramatic scene (red smoke, rain, night), other side context (parliament, map, building). High contrast.",
+  "color_contrast": "Near-black / deep red / dark navy background against a brightly lit character, tuned to pop on YouTube's dark UI.",
+  "emotion_trigger": "Dramatic weather, searchlights, classified documents, blood traces for tension - never gore.",
+  "title_formula": "'Kaise [Person] ne [dramatic event]' OR '[Operation Name]: [shocking reveal]' OR '[Person] ka [event] - [consequence]'. Max 10 Hindi words.",
+  "power_words_hint": "use Hindi power words (kaise, kyun, asli, khufiya, saazish, raaz) for click-through",
+  "variants_per_video": 5,
+  "aspect_ratio": "16:9"
+}

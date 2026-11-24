@@ -1,0 +1,47 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: agency
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-agency}
+      POSTGRES_DB: agency
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U agency"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build: ./backend
+    env_file: [.env]
+    environment:
+      DATABASE_URL: postgresql+asyncpg://agency:${POSTGRES_PASSWORD:-agency}@db:5432/agency
+      ARTIFACT_ROOT: /artifacts
+      CHANNEL_DNA_ROOT: /channel_dna
+      MUSIC_LIBRARY_DIR: /assets/music
+      YOUTUBE_CLIENT_SECRET_FILE: /secrets/client_secret.json
+      YOUTUBE_TOKEN_FILE: /secrets/youtube_token.json
+      CORS_ORIGINS: http://localhost:3000
+    volumes:
+      - artifacts:/artifacts
+      - ./channel_dna:/channel_dna:ro
+      - ./assets/music:/assets/music:ro
+      - ./secrets:/secrets
+    ports: ["8000:8000"]
+    depends_on:
+      db: {condition: service_healthy}
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    environment:
+      NEXT_PUBLIC_API_BASE: http://localhost:8000
+    ports: ["3000:3000"]
+    depends_on: [backend]
+    restart: unless-stopped
+
+volumes:
+  pgdata:
+  artifacts:

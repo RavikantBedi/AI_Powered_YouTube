@@ -1,0 +1,20 @@
+{
+  "_README": [
+    "The Music Agent will ONLY use a track that has an entry in this file with a known",
+    "license. A track without an entry is treated as unknown-rights and is refused —",
+    "the video renders narration-only rather than risking a copyright claim.",
+    "",
+    "Layout: place audio files in mood subdirectories under this directory:",
+    "  assets/music/grave/    assets/music/tense/",
+    "  assets/music/hopeful/  assets/music/neutral/",
+    "",
+    "Then add one entry per FILENAME (not path) below.",
+    "Accepted license values: CC0, public-domain, licensed, royalty-free, owned."
+  ],
+  "example-track.mp3": {
+    "license": "CC0",
+    "source": "https://example.org/track",
+    "creator": "Composer Name",
+    "notes": "replace this entry with your real tracks"
+  }
+}

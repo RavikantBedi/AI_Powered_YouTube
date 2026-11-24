@@ -1,0 +1,50 @@
+[project]
+name = "ai-video-agency"
+version = "0.1.0"
+description = "Autonomous multi-agent AI YouTube video production agency"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    "pydantic>=2.8",
+    "pydantic-settings>=2.4",
+    "sqlalchemy[asyncio]>=2.0.30",
+    "aiosqlite>=0.20",
+    # 1.x requires Python >=3.11; 0.125 is the newest that supports 3.10 and already
+    # carries output_config / adaptive thinking / cache_control.
+    "anthropic>=0.125",
+    "httpx>=0.27",
+    "google-api-python-client>=2.140",
+    "google-auth-oauthlib>=1.2",
+    "google-auth-httplib2>=0.2",
+    "edge-tts>=6.1",
+    "python-multipart>=0.0.9",
+]
+
+[project.optional-dependencies]
+postgres = ["asyncpg>=0.29"]
+dev = ["pytest>=8.2", "pytest-asyncio>=0.23", "ruff>=0.5"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["app*"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.ruff.lint]
+ignore = [
+    # Agent contracts (capabilities, chains) are declared as class-level lists by design.
+    "RUF012",
+    # Notification and event-bus paths deliberately swallow everything: a failed
+    # notification must never fail a finished production.
+    "BLE001",
+]
